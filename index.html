@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sueño Artesanal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link de styles -->
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- Icono de la pagina -->
+  <link rel="icon" href="./imagenes/logo.jpg" />
+  <!-- Estilo de texto -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+      <!-- botones corvertidos del menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Cuando colapsa -->
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <!-- logotipo de la pagina -->
+          <img src="./imagenes/logo.jpg" width="80" alt="Logo de la pagina" />
+        </a>
+        <!-- Indicadores -->
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Testimonios-carrusel">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-disabled="true" href="#productos">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-disabled="true" href="#proceso">Proceso</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-disabled="true" href="#formulario-reserva">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección de Inicio -->
+  <section id="inicio" class="hero-section">
+    <div class="container">
+      <h1>Sueño Artesanal</h1>
+      <p>Diseñamos ropa única, combinando exclusividad, confort y sostenibilidad.</p>
+      <h3>Descubre diseños exclusivos y telas de alta calidad</h3>
+      <a href="#Aboutus" class="btn btn-primary">Más información</a>
+    </div>
+  </section>
+
+  <!----------------------- Seccion about us ------------------------->
+  <section class="Aboutus" style="text-align: center;">
+    <h2 class="seccion-titulo">About us</h2>
+    <h3 class="seccion-descripcion">Conoce quién está detrás del startup</h3>
+
+    <!--------------------------------- Carrusel ------------------------------------------>
+    <div id="Testimonios-carrusel" class="carousel carousel-dark slide">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="testimonio-imagen" src="./imagenes/maricela.jpg" alt="Foto de Maricela">
+            <div class="testimonio-info">
+              <p class="cliente">Maricela Cedeño Barrantes</p>
+              <p class="cargo">Gerente de Tienda Nail</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen" src="./imagenes/SCR.jpeg" alt="Foto de Sebastian">
+            <div class="testimonio-info">
+              <p class="cliente">Sebastian Cedeño Rodriguez</p>
+              <p class="cargo">Loren</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#Testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#Testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+
+  <!----------------------------- Sección de productos -------------------------->
+  <section id="productos" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Productos vendidos</h2>
+      <div id="carouselproductos" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselproductos" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselproductos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselproductos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselproductos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselproductos" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+
+        <!-- Carrousel -->
+        <div class="carousel-inner">
+          <!-- Producto 1 -->
+          <div class="carousel-item active">
+            <img src="imagenes/camisa.jpeg" class="d-block w-100" alt="Camisas">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Camisas</h5>
+              <p>Nuestras camisas combinan diseño, calidad y estilo. Cada camisa es cuidadosamente
+                elaborada utilizando materiales de alta calidad.</p>
+            </div>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="carousel-item">
+            <img src="imagenes/pantalonbaño.jpeg" class="d-block w-100" alt="Pantalonetas de baño">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pantalonetas de baño</h5>
+              <p>Nuestras pantalonetas de baño combinan estilo, comodidad y calidad. Diseños únicos y vibrantes que
+                reflejan personalidad y exclusividad, ideales para quienes buscan destacar en la playa o la piscina.</p>
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="carousel-item">
+            <img src="imagenes/pantalonespijama.jpeg" class="d-block w-100" alt="Pantalones de pijama">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pantalones de pijama</h5>
+              <p>Descubre la comodidad y el estilo con nuestros pantalones de pijama. Cada prenda es confeccionada con
+                materiales suaves y transpirables, ideales para brindarte el descanso que mereces.</p>
+            </div>
+          </div>
+
+          <!-- Producto 4 -->
+          <div class="carousel-item">
+            <img src="imagenes/blusa.jpeg" class="d-block w-100" alt="Blusas">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Blusas</h5>
+              <p> Descubre blusas únicas. Donde el diseño exclusivo se encuentra con la delicadeza de materiales de alta
+                calidad.</p>
+            </div>
+          </div>
+
+          <!-- Producto 5 -->
+          <div class="carousel-item">
+            <img src="imagenes/faldapanta.jpeg" class="d-block w-100" alt="Pantalones de pijama">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Faldas pantalones</h5>
+              <p> Descubre blusas únicas. Donde el diseño exclusivo se encuentra con la delicadeza de materiales de alta
+                calidad.</p>
+            </div>
+          </div>
+
+
+          <!-- Controles de Carousel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselproductos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselproductos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+  </section>
+
+  <!------------------------------------- Seccion de procesos --------------------------------------->
+  <section id="videos" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Procesos de producción</h2>
+      <div id="carouselVideos" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Video 1"></button>
+          <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="1" aria-label="Video 2"></button>
+          <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="2" aria-label="Video 3"></button>
+        </div>
+
+        <!-- Carousel -->
+        <div class="carousel-inner">
+          <!-- Video 1 -->
+          <div class="carousel-item active">
+            <video class="d-block w-100" controls>
+              <source src="videos/CÓMO HACER UNA CAMISA DE HOMBRE __ Trazo - Corte y Confección.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento de video.
+            </video>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="carousel-item">
+            <video class="d-block w-100" controls>
+              <source src="videos/COMO TRAZAR UN PATRÓN DE BLUSA BÁSICA SUPER FÁCIL.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento de video.
+            </video>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="carousel-item">
+            <video class="d-block w-100" controls>
+              <source src="videos/Como hacer pijama paso a paso.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento de video.
+            </video>
+          </div>
+
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselVideos" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!------------------------------------------ Formulario ------------------------------------------->
+  <section id="formulario-reserva" class="py-5">
+    <div class="container">
+      <h4 class="text-center">Formulario de contacto</h4>
+      <form>
+        <!-- Nombre completo -->
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre completo"
+          required>
+        <!-- Producto en el que esta interesado -->
+        <label class="form-label">Seleccione los productos en los que esta interesado:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="producto" value="productocamisa" id="productocamisa"
+            required>
+          <label class="form-check-label" for="productocamisa">
+            Camisas
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="producto" value="productopantaloneta"
+            id="productopantaloneta">
+          <label class="form-check-label" for="productopantaloneta">
+            Pantalonetas de baño
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="producto" value="productopantapijama"
+            id="productopantapijama">
+          <label class="form-check-label" for="productopantapijama">
+            Pantalones de pijama
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="producto" value="productoblusas" id="productoblusas">
+          <label class="form-check-label" for="productoblusas">
+            Blusas
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="producto" value="productofaldapantalon"
+            id="productofaldapantalon">
+          <label class="form-check-label" for="productofaldapantalon">
+            Faldas pantalones
+          </label>
+        </div>
+        <!-- Direccion de entrega -->
+        <input class="controls" type="text" name="direccion" id="direccion"
+          placeholder="Ingrese la dirección de entrega" required>
+        <!-- Celular -->
+        <input class="controls" type="text" name="celular" id="celular" placeholder="Ingrese su celular para contacto"
+          required>
+        <!-- Telefono fijo -->
+        <input class="controls" type="text" name="telefono" id="telefono"
+          placeholder="Ingrese su numero de telefono fijo" required>
+        <!-- Comentario del cliente -->
+        <input class="controls" type="text" name="comentario" id="comentario" placeholder="Comentario (Opcional)">
+        <!-- Botón de enviar -->
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  </form>
+  </div>
+  </section>
+
+  <!-------------------- seccion del footer -------------------->
+  <footer class="footer">
+    <div class="container">
+      <p class="mt-4">Creado por Sebastian Cedeño R. (2024) @</p>
+      <p class="mt-4">Numero de Contacto: 6262-6255</p>
+    </div>
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
